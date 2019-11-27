@@ -9,4 +9,7 @@ export default {
 </script>
 
 <style lang="scss">
+header {
+  border-bottom: 1px solid black;
+}
 </style>
