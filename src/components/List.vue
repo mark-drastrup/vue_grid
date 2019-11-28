@@ -1,12 +1,42 @@
 <template>
-  <section></section>
+  <section :class="showInfoBox === false ? 'grid1' : 'grid2'">
+    <info-table />
+    <info-box v-if="showInfoBox" />
+    <button @click="show">Show Info</button>
+  </section>
 </template>
 
 <script>
+import InfoTable from "./InfoTable.vue";
+import InfoBox from "./InfoBox.vue";
 export default {
-  name: "List"
+  name: "List",
+  components: { InfoTable, InfoBox },
+  data() {
+    return {
+      showInfoBox: true
+    };
+  },
+  methods: {
+    show() {
+      this.showInfoBox = !this.showInfoBox;
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.grid1 {
+  grid-template-columns: 1fr;
+}
+
+.grid2 {
+  grid-template-columns: 3fr 1fr;
+}
 </style>
