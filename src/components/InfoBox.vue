@@ -9,7 +9,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
-  background: red;
-}
 </style>

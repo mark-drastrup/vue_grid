@@ -28,7 +28,6 @@ export default {
 <style lang="scss" scoped>
 section {
   display: grid;
-  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -37,6 +36,6 @@ section {
 }
 
 .grid2 {
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
 }
 </style>

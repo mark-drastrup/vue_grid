@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="main">
     <header-section />
     <list />
   </section>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-section {
+.main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6% 1fr;

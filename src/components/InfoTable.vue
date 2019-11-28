@@ -10,6 +10,6 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  background: yellow;
+  border-right: 1px solid black;
 }
 </style>
